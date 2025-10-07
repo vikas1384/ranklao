@@ -1,4 +1,5 @@
 // Logo updated to use external image
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -67,7 +68,7 @@ const Footer = () => {
               <li className="hover:text-primary cursor-pointer transition-colors">Success Stories</li>
               <li className="hover:text-primary cursor-pointer transition-colors">Blog</li>
               <li>
-                <a href="/refund-cancellation" className="hover:text-primary transition-colors">Refund & Cancellation</a>
+                <Link to="/refund-cancellation" className="hover:text-primary transition-colors">Refund & Cancellation</Link>
               </li>
             </ul>
           </div>
@@ -89,13 +90,13 @@ const Footer = () => {
                 Become a Mentor
               </li>
               <li>
-                <a href="/contact" className="hover:text-primary transition-colors">Contact Us</a>
+                <Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
               </li>
               <li>
-                <a href="/faq" className="hover:text-primary transition-colors">FAQ</a>
+                <Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link>
               </li>
               <li>
-                <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
+                <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -106,10 +107,10 @@ const Footer = () => {
             © 2024 Ranklao. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="/terms" className="hover:text-primary transition-colors">Terms</a>
-            <a href="/privacy" className="hover:text-primary transition-colors">Privacy</a>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms</Link>
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
             <a href="#" className="hover:text-primary transition-colors">Cookies</a>
-            <a href="/refund-cancellation" className="hover:text-primary transition-colors">Refund & Cancellation</a>
+            <Link to="/refund-cancellation" className="hover:text-primary transition-colors">Refund & Cancellation</Link>
           </div>
         </div>
       </div>

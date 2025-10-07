@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
+import { Link } from "react-router-dom";
 
 const RefundCancellation = () => {
   return (
@@ -62,7 +63,7 @@ const RefundCancellation = () => {
           <section className="mt-8 space-y-2">
             <h2 className="text-xl font-semibold">7. Contact</h2>
             <p className="text-muted-foreground">
-              For any questions regarding this policy, please reach out at <a href="mailto:contact.ranklao@gmail.com" className="text-primary">contact.ranklao@gmail.com</a> or visit our <a href="/contact" className="text-primary">Contact Us</a> page.
+              For any questions regarding this policy, please reach out at <a href="mailto:contact.ranklao@gmail.com" className="text-primary">contact.ranklao@gmail.com</a> or visit our <Link to="/contact" className="text-primary">Contact Us</Link> page.
             </p>
           </section>
         </div>

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   const faqs = [
@@ -50,7 +51,7 @@ const FAQ = () => {
           </div>
 
           <div className="mt-8 rounded-lg border p-4 text-sm text-muted-foreground">
-            Can’t find your answer? Email <a href="mailto:contact.ranklao@gmail.com" className="text-primary">contact.ranklao@gmail.com</a> or visit our <a href="/contact" className="text-primary">Contact Us</a> page.
+            Can’t find your answer? Email <a href="mailto:contact.ranklao@gmail.com" className="text-primary">contact.ranklao@gmail.com</a> or visit our <Link to="/contact" className="text-primary">Contact Us</Link> page.
           </div>
         </div>
       </main>
