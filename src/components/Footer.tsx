@@ -77,11 +77,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li 
-                className="hover:text-primary cursor-pointer transition-colors"
-                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                About Us
+              <li>
+                <Link to="/about" className="hover:text-primary transition-colors">About Us</Link>
               </li>
               <li 
                 className="hover:text-primary cursor-pointer transition-colors"
@@ -111,6 +108,8 @@ const Footer = () => {
             <Link to="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
             <a href="#" className="hover:text-primary transition-colors">Cookies</a>
             <Link to="/refund-cancellation" className="hover:text-primary transition-colors">Refund & Cancellation</Link>
+            <Link to="/pricing-policy" className="hover:text-primary transition-colors">Pricing Policy</Link>
+            <Link to="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</Link>
           </div>
         </div>
       </div>
